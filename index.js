@@ -17,7 +17,7 @@ app.listen(port, () => {
   console.log(`Legion Z | Ejecutando en el http://localhost:${port}`);
 });
 
-const statusMessages = ["Bot oficial"];
+const statusMessages = ["by Legion Network"];
 
 let currentIndex = 0;
 const channelId = '';
