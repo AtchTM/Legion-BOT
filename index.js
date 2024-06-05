@@ -11,13 +11,13 @@ const client = new Client({
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.send('Legion Z | Se ha cambiado el estado del bot');
+  res.send('QuimBOT | Se ha cambiado el estado del bot');
 });
 app.listen(port, () => {
   console.log(`Legion Z | Ejecutando en el http://localhost:${port}`);
 });
 
-const statusMessages = ["by Legion Network"];
+const statusMessages = ["by Quim Network"];
 
 let currentIndex = 0;
 const channelId = '';
@@ -25,7 +25,7 @@ const channelId = '';
 async function login() {
   try {
     await client.login(process.env.TOKEN);
-    console.log(`\x1b[36m%s\x1b[0m`, `Legion Z | Se ha iniciado sesion como ${client.user.tag}`);
+    console.log(`\x1b[36m%s\x1b[0m`, `QUIMBOT | Se ha iniciado sesion como ${client.user.tag}`);
   } catch (error) {
     console.error('Legion Z | Ha ocurrido un error al iniciar sesion con el bot:', error);
     process.exit(1);
